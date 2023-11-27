@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'myFont';
+    src: url(/fonts/wobbles.ttf);
+}
+
+/*------------------------------------------header----------------------------------------*/
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1400;
+    width: 100%;
+    height: 4.4rem;
+    background-color: rgb(23, 23, 23);
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-top: 1.4rem;
+    padding:0 40px;
+}
+
+.nav-list-mobile{
+    display: none;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+/*------------------------------------------header----------------------------------------*/
+.sneaker-show{
+    margin-top: 4.4rem;
+    height: 70rem;
+} 
+
+/* linear-gradient(to left, rgb(174, 56, 57), #ffffff);--*/
+
+.right{
+    margin-top: 8rem;
+    padding: 0 4rem; 
+}
+.right p{
+    margin-bottom: 1rem;
+}
+
+.cherrys{
+    height:30rem;
+}
+
+.container-two{
+    max-width: 98rem;
+}
+
+.first-block{
+    display: flex;
+}
+
+h1{
+    font-size: 3.6rem;
+    font-family: 'myFont';
+}
+
+h1 span{
+    color:red ;
+}
+
+button{
+    padding: 10px 10px;
+    background-color: #CE434C;
+    border-radius: 5px;
+    color: white;
+}
