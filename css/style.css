@@ -2,33 +2,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration:none;
+    list-style: none;
 }
 
 @font-face {
-    font-family: 'myFont';
+    font-family: wobbles;
     src: url(/fonts/wobbles.ttf);
+}
+
+@font-face {
+    font-family:plasdrip;
+    src: url(/fonts/plasdrip.ttf);
 }
 
 /*------------------------------------------header----------------------------------------*/
 header{
     position: fixed;
     top: 0;
-    z-index: 1400;
+    z-index: 1000;
     width: 100%;
     height: 4.4rem;
     background-color: rgb(23, 23, 23);
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.nav-list{
+.navbar{
     list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     text-decoration: none;
-    margin-top: 1.4rem;
-    padding:0 40px;
+    padding: 10px 22px;
+
 }
 
+.logo-pic{
+    height: 2.5rem;
+    padding-left: 1rem;
+}
 .nav-list-mobile{
     display: none;
 }
@@ -36,49 +49,128 @@ header{
 .nav-link{
     font-size: 1.2rem;
     color: white;
-    text-decoration: none;
+    padding: 0 1.3rem;
+    font-family: 'Anton', sans-serif;
 }
 
-/*------------------------------------------header----------------------------------------*/
+.s-icons{
+    padding:10px 22px ;
+    background-color: gray;
+    border-radius: 5rem;
+    margin-right: 15px;
+    margin-left: 8px ;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-link-bag{
+    margin-left: 10px;
+}
+/*------------------------------------------First-Section----------------------------------------*/
 .sneaker-show{
-    margin-top: 4.4rem;
-    height: 70rem;
+    margin-top: 8rem;
+    height: 38rem;
+   
 } 
 
 /* linear-gradient(to left, rgb(174, 56, 57), #ffffff);--*/
 
 .right{
-    margin-top: 8rem;
+    margin-top: 4.5rem;
     padding: 0 4rem; 
 }
 .right p{
     margin-bottom: 1rem;
+    line-height: 2rem;
+
 }
 
 .cherrys{
-    height:30rem;
+    height:37rem;
 }
 
-.container-two{
-    max-width: 98rem;
-}
 
 .first-block{
-    display: flex;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns in the grid */
+    gap: 5px;
 }
 
 h1{
     font-size: 3.6rem;
-    font-family: 'myFont';
+    font-family: 'wobbles';
 }
 
 h1 span{
-    color:red ;
+    color:#B32824 ;
 }
 
-button{
+.right p{
+    font-family:'plasdrip';
+    font-weight: 100;
+}
+
+.shop-btn{
     padding: 10px 10px;
-    background-color: #CE434C;
+    background-color: #B32824;
     border-radius: 5px;
     color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+/*--------------------------------second-section------------------------------------------------*/
+
+.sneakers-options{
+    height: 70rem;
+    padding: 0 25px;
+}
+
+h2{
+    font-family: 'wobbles';
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 5rem;
+
+}
+
+.box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:15px;
+    margin-bottom: 2rem;
+   
+}
+
+.box{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.fa-star{
+    color: gold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.sneaker-img{
+    height: 8rem;
+}
+.content{
+    text-align: center;
+}
+
+.btn-cart{
+    padding: 8px 13px;
+    border-radius: 1rem;
+
+}
+
+/*-----------------------------------------Customer-Reviews-----------------------------------------*/
+
+h2{
+
 }

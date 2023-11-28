@@ -4,93 +4,251 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" href ="css/style.css">
-    <title> Sneaker-Site </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Handjet:wght@300;400&family=Orbitron:wght@400;500&family=Press+Start+2P&family=Rajdhani:wght@400;600&family=Teko:wght@300;400&display=swap" rel="stylesheet">
+        
+ 
+
+    <title> Sneaker-Room </title>
    
 </head>
 <body>
     <header>
-        <div class= container>
-          <!----------------------------------------nav-list-mobile------------------------------------------------------->
-          <nav class="nav">
-            <ul class="nav-list nav-list-mobile">
-              <li class= "nav-item">
-                <div class="mobile-menu">
-                  <span class="line line-top"></span>
-                  <span class= "line line-bottom"></span>
-                </div>
-              </li>
+       <a href="#" class="logo"><img class="logo-pic" src="images/sneakerlogo.png"></a> 
+       <ul class="navbar"> 
+        <li><a href="#Home" class="nav-link"> Home</a></li>
+        <li><a href="#Sneakers" class="nav-link"> Sneakers</a></li>
+        <li><a href="#About"class="nav-link"> About </a></li>
+        <li><a href="#Reviews" class="nav-link"> Reviews</a></li>
+        
+       </ul> 
+          
   
-              <li class="nav-item">
-                <a href="#" class="nav-link nav-link-apple"><i style="color: #ffffff;"></i></a>
-              </li>
-  
-              <li class="nav-item">
-                <a href="#" class="nav-link nav-link-bag"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-              </li>
-     
-            </ul>
-            <!----------------------------------------nav-list-mobile------------------------------------------------------->
-  
-            <!---------------------------------------nav-list-larger-------------------------------------------------------->
-            <ul class="nav-list nav-list-larger">
-              <li class="nav-item nav-item-hidden">
-                <a href="#" class="nav-link"><i class="fa-brands fa-apple" style="color: #ffffff;"></i></a>
-              </li>
-  
-             
-              <li class="nav-item">
-                <a href="#" class="nav-link"> Home</a>
-              </li>
-  
-              <li class="nav-item">
-                <a href="#" class="nav-link"> Sneakers</a>
-              </li>
-  
-              <li class="nav-item">
-                <a href="#" class="nav-link"> Reviews</a>
-              </li>
-  
-              <li class="nav-item">
-                <a href="#" class="nav-link"> Location</a>
-              </li>
-  
-  
-              <li class="nav-item">
-                <a href="#" class="nav-link nav-link-search"><i class="fa-solid fa-heart" style="color: #ffffff;"></i>
-                </a>
-              </li>
-     
-  
-              <li class="nav-item nav-item-hidden">
-                <a href="#" class="nav-link nav-link-bag"><i class="fa-solid fa-cart-shopping"  style="color: #ffffff;"></i></a>
-              </li>
-  
-  
-            <!---------------------------------------nav-list-larger-------------------------------------------------------->
-     
-     
-            </ul>
-          </nav>
+        <div class="s-icons">
+            <a href="#" class="nav-link-heart"><i class="fa-solid fa-heart" style="color: #ffffff;"></i></a>
+            <a href="#" class="nav-link-bag"><i class="fa-solid fa-cart-shopping"  style="color: #ffffff;"></i></a>
         </div>
-      </header>
+  
+    </header>
   
 
     <section class = "sneaker-show">
         <div class="container-two">
             <div class= "first-block">
-                <div class="right">   
+                <div class="right">  
                     <h1> Air <span>Jordan</span> XII</h1>  
                     <p>Elevate your style with Air Jordan 12 Cherry – a fusion of classic design and modern comfort. White leather, bold red accents, and iconic Jumpman detailing make these sneakers a timeless statement. </p>
-                    <button> Buy Now! </button>
+                    <button class="shop-btn"> Shop Now ! </button>
                 </div>
 
                 <div class= "left">
-                    <img class="cherrys" src="images/cherry.png">
+                    <img class="cherrys" src="images/cherry12s.png">
                 </div>
-
             </div>
 
         </div>
+    </section>
+
+    <section class = "sneakers-options">
+        <h2> Sneakers </h2>
+             <div class="box-container">
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="#" class="fa fa-share"></a>
+                            <a href="#" class="fa fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <img class="sneaker-img" src="images/olive4s.png" alt="">
+                            <h3> Air Jordan 4 Craft </h3>
+                            <div class="price">$200 </div>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="add-cart">
+                                <button class="btn-cart"> Add to <i class="fa-solid fa-bag-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="#" class="fa fa-share"></a>
+                            <a href="#" class="fa fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <img class="sneaker-img" src="images/unc.png" alt="">
+                            <h3>Nike UNC Dunks </h3>
+                            <div class="price">$200 </div>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="add-cart">
+                                <button class="btn-cart"> Add to <i class="fa-solid fa-bag-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="#" class="fa fa-share"></a>
+                            <a href="#" class="fa fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <img class="sneaker-img" src="images/forest-green.png" alt="">
+                            <h3>Nike Shoes</h3>
+                            <div class="price">$200</div>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="add-cart">
+                                <button class="btn-cart"> Add to <i class="fa-solid fa-bag-shopping"></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="#" class="fa fa-share"></a>
+                            <a href="#" class="fa fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <img class="sneaker-img" src="images/red-air-one.png" alt="">
+                            <h3>Nike Shoes</h3>
+                            <div class="price">$200 </div>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="add-cart">
+                                <button class="btn-cart"> Add to <i class="fa-solid fa-bag-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="#" class="fa fa-share"></a>
+                            <a href="#" class="fa fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <img class="sneaker-img" src="images/gratitude.png" alt="">
+                            <h3> Air Jordan 11 Gratitude</h3>
+                            <div class="price"> $200 </div>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="add-cart">
+                                <button class="btn-cart"> Add to <i class="fa-solid fa-bag-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="#" class="fa fa-share"></a>
+                            <a href="#" class="fa fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <img class="sneaker-img" src="images/polamino.png" alt="">
+                            <h3> Air Jordan 1 Polamino</h3>
+                            <div class="price">$200</div>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="add-cart">
+                                <button class="btn-cart"> Add to <i class="fa-solid fa-bag-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="#" class="fa fa-share"></a>
+                            <a href="#" class="fa fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <img class="sneaker-img" src="images/pinegreen.png" alt="">
+                            <h3>Air Jordan 4 Pine Green</h3>
+                            <div class="price">$200 </div>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="add-cart">
+                                <button class="btn-cart"> Add to <i class="fa-solid fa-bag-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" class="fa fa-heart"></a>
+                            <a href="#" class="fa fa-share"></a>
+                            <a href="#" class="fa fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <img class="sneaker-img" src="images/olive.png" alt="">
+                            <h3>Nike Shoes</h3>
+                            <div class="price">$200 </div>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="add-cart">
+                                <button class="btn-cart"> Add to <i class="fa-solid fa-bag-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        
+                
+
+    </section>
+
+    <section class="customer-service">
+        <h2> Customer Reviews </h2>
     </section>
 
     <script src="https://kit.fontawesome.com/fc84bd7ef1.js" crossorigin="anonymous"></script>
