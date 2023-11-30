@@ -169,7 +169,7 @@ header{
     padding-top: 10px;
 }
 
-#cartDropdown.show {
+.cart-dropdown.show {
     display: block;
 }
 
