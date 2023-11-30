@@ -57,34 +57,113 @@ header{
     padding:10px 22px ;
     background-color: gray;
     border-radius: 5rem;
-    margin-right: 15px;
+    margin-right: 3.6rem;
     margin-left: 8px ;
-    margin-right: 1rem;
     display: flex;
     justify-content: space-between;
+    font-size: 1.3rem;
 
 }
-.nav-link-bag{
+.nav-link-cart{
+    margin:0  15px;
+}
+
+/* Add this CSS to your stylesheet */
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon .fa-shopping-cart {
+    font-size: 27px;
+    color: #333; /* Default color */
+}
+
+#cartItemCount {
+    display: none;
+}
+
+.cart-icon .cart-item-count {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    background-color: #ff8c00; /* Red background color for the count */
+    color: #fff; /* Text color for the count */
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.cart-item-image{
+    width: 80px;
+    padding-right: 10px;
+
+}
+
+.nav-link-user{
     margin-left: 10px;
 }
+
+.cart-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px;
+    list-style: none;
+    display: none;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Adjust the padding as needed */
+}
+.cart-item-image {
+    width: 80px; /* Set a desired width for the image */
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.product-details {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.product-name, .product-price {
+    flex-grow: 1;
+    
+}
+
+.product-name {
+    font-size: 18px; /* Adjust the font size for the product name */
+    padding-right: 20px;
+}
+
+
+.product-price {
+    font-size: 15px; /* Adjust the font size for the product price */
+    padding-right: 15px;
+}
+
+
+.remove-icon {
+    cursor: pointer;
+}
+
+
+.s-icons .cart-dropdown.show {
+    display: block;
+}
+
 /*------------------------------------------First-Section----------------------------------------*/
 .sneaker-show{
     margin-top: 8rem;
     height: 38rem;
-   
+
 } 
-
-/* linear-gradient(to left, rgb(174, 56, 57), #ffffff);--*/
-
-.right{
-    margin-top: 4.5rem;
-    padding: 0 4rem; 
-}
-.right p{
-    margin-bottom: 1rem;
-    line-height: 2rem;
-
-}
 
 .cherrys{
     height:37rem;
@@ -94,7 +173,7 @@ header{
 .first-block{
     margin-top: 5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns in the grid */
+    grid-template-columns:repeat(2,1fr); /* Two columns in the grid */
     gap: 5px;
 }
 
@@ -107,10 +186,19 @@ h1 span{
     color:#B32824 ;
 }
 
-.right p{
-    font-family:'plasdrip';
-    font-weight: 100;
+.right{
+    margin-top: 4.5rem;
+    padding: 0 4rem; 
+    
 }
+.right p{
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    font-weight:800;
+   
+    
+}
+
 
 .shop-btn{
     padding: 10px 10px;
@@ -118,21 +206,73 @@ h1 span{
     border-radius: 5px;
     color: white;
     font-family: 'Anton', sans-serif;
+    letter-spacing:2px;
+    font-size: 1rem;
 }
+
+/*------------------------------------------feature-section-------------------------------------*/
+
+.features {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color:#e8e8e8;
+    margin-bottom: 4rem;
+
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid rgb(255, 255, 255); 
+    padding: 20px 0;
+
+}
+
+.feature:last-child {
+    border-right: none; /* Remove right border from the last feature */
+}
+  
+
+.f-icon{
+    height: 4.5rem;
+    color: #B32824;
+    margin-bottom: 5px;
+}
+
+.featureTitle{
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.featureDesc {
+    color: gray;
+    width: 50%;
+    height: 70px;
+}
+
+  
+
 
 /*--------------------------------second-section------------------------------------------------*/
 
 .sneakers-options{
-    height: 70rem;
+    height: 45rem;
     padding: 0 25px;
+    margin-bottom: 6rem;
 }
 
 h2{
     font-family: 'wobbles';
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 5rem;
 
+}
+
+h2 span{
+    color: #B32824;
 }
 
 .box-container{
@@ -145,32 +285,229 @@ h2{
 
 .box{
     padding: 20px;
-    border: 1px solid black;
     border-radius: 1.7rem;
     margin-bottom: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Increase the shadow size for a more pronounced effect */
+    background-color: #fff; /* Set a background color to distinguish the box from the shadow */
+    position: relative;
+}
+
+.content h3{
+    margin-bottom: 8px;
+}
+
+.icons {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: .9rem;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: left 0.3s ease, visibility 0s 0.3s, opacity 0.3s;
+}
+
+.box:hover .icons {
+    left: 1rem;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.three-icons{
+    color: rgb(111, 111, 111);
+    margin-bottom: 5px;
+    width: 5rem;
+    line-height: 1rem;
+    
+    
+}
+
+
+
+.price{
+    margin-bottom: 5px;
 }
 
 .fa-star{
     color: gold;
     text-align: center;
     margin-bottom: 1rem;
+    border: 1px;
 }
 
 .sneaker-img{
     height: 8rem;
+    margin-bottom: 1rem;
+    margin-top: 2.3rem;
 }
 .content{
     text-align: center;
 }
 
 .btn-cart{
-    padding: 8px 13px;
-    border-radius: 1rem;
+    padding: 8px 15px;
+    border-radius: .5rem;
+    background-color: #B32824;
+    color: #e8e8e8;
 
 }
 
 /*-----------------------------------------Customer-Reviews-----------------------------------------*/
 
-h2{
+.customer-review{
+    padding: 20px;
+    height: 45rem;
+    margin-top: 3rem;
+    margin-bottom: 10rem; 
 
 }
+
+.h2-customer{
+    margin-top: 10rem;
+}
+
+.h2-customer span{
+    color:  #B32824;
+}
+.customer-container{
+    padding: 0 40px;
+}
+
+.c-box{
+    margin-top: 5rem;
+    text-align: center;
+    position: relative;
+    padding: 70px 20px 20px;
+    border: 7px solid black;
+    border-radius: 1.7rem;
+    background-color: #E8E8E8;
+}
+
+.c-box p{
+    margin-bottom: 1rem;
+    color:black;
+    padding: 0 20px;
+
+}
+
+.c-box h3{
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+.review-pic{
+    top: -75px;
+    height: 7.2rem;
+    position: absolute;
+    left: calc(50% - 60px);
+    text-align: center;
+    border: 7px solid black;
+    border-radius: 50%;
+    background-color: #B32824;
+    
+}
+
+.customer-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:45px;
+    margin-bottom: 10rem;
+       
+
+}
+
+
+
+.other-stars{
+    color:  gold;
+}
+
+
+  
+/*----------------------------------------Contact------------------------------*/
+
+.contact{
+    height: 15rem;
+    background-color: #E8E8E8;
+
+}
+.contact{
+    padding: 50px 15% 40px;
+}
+
+.main-contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto)) ;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-content h4{
+    font-size: 20px;
+    margin-bottom:1.5rem;
+    text-align: center;
+    font-family: 'Anton';
+}
+
+.contact-content li{
+    margin-bottom: 1rem;
+    
+    
+
+}
+.contact-content li a{
+    display:block;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    transition: all .40s ease;
+    color: black;
+    
+
+}
+
+.contact-content li a:hover{
+    transform: translateX(10px);
+    color:black; 
+
+}
+
+.last-text p{
+    text-align: center;
+    padding: 25px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    
+
+}
+
+
+.last-text{
+    background-color:  #E8E8E8;
+    color:black;
+    font-family: 'Anton';
+    height: 4rem;
+    letter-spacing: 2px;
+}
+
+/*---------------------------------------- Responsiveness------------------------------------------------*/
+
+
+
+@media (max-width: 768px) {
+    .first-block {
+      grid-template-columns: 1fr;
+    }
+  
+    .image-container,
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-container {
+      margin-bottom: 20px;
+    }
+  }

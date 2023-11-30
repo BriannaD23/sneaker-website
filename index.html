@@ -27,7 +27,14 @@
   
         <div class="s-icons">
             <a href="#" class="nav-link-heart"><i class="fa-solid fa-heart" style="color: #ffffff;"></i></a>
-            <a href="#" class="nav-link-bag"><i class="fa-solid fa-cart-shopping"  style="color: #ffffff;"></i></a>
+            <div id="cartIcon" class="cart-icon">
+                <a href="#" class="nav-link-cart"><i class="fa-solid fa-cart-shopping"  style="color: #ffffff;"></i></a>
+                <span id="cartItemCount" class="cart-item-count">0</span>
+            </div>
+            <a href="#" class="nav-link-user"><i class="fa-solid fa-user" style= "color: #ffffff;"></i></a>
+            <div id="cartDropdown" class="cart-dropdown">
+                <div id="cartTotal" class="cart-total"></div>
+            </div>
         </div>
   
     </header>
@@ -50,14 +57,37 @@
         </div>
     </section>
 
+    <div class="features">
+        <div class="feature">
+            <img class="f-icon" src="images/shipping.png" alt="">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img class="f-icon" src="images/product-return.png" alt="">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img class="f-icon" src="images/gift-card.png" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img class="f-icon" src="images/contact-mail.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
     <section class = "sneakers-options">
-        <h2> Sneakers </h2>
+        <h2> S<span>N</span>E</span><span>A</span>K<span>E</span>R<span>S</span></h2>
              <div class="box-container">
                     <div class="box">
                         <div class="icons">
-                            <a href="#" class="fa fa-heart"></a>
-                            <a href="#" class="fa fa-share"></a>
-                            <a href="#" class="fa fa-eye"></a>
+                            <a href="#" id="likes" class="fa fa-heart like three-icons"></a>
+                            <a href="#" class="fa fa-share three-icons"></a>
+                            <a href="#" class="fa fa-eye three-icons"></a>
                         </div>
                         <div class="content">
                             <img class="sneaker-img" src="images/olive4s.png" alt="">
@@ -78,9 +108,9 @@
 
                     <div class="box">
                         <div class="icons">
-                            <a href="#" class="fa fa-heart"></a>
-                            <a href="#" class="fa fa-share"></a>
-                            <a href="#" class="fa fa-eye"></a>
+                            <a href="#" id="likes" class="fa fa-heart three-icons"></a>
+                            <a href="#" class="fa fa-share three-icons"></a>
+                            <a href="#" class="fa fa-eye three-icons"></a>
                         </div>
                         <div class="content">
                             <img class="sneaker-img" src="images/unc.png" alt="">
@@ -102,13 +132,13 @@
 
                     <div class="box">
                         <div class="icons">
-                            <a href="#" class="fa fa-heart"></a>
-                            <a href="#" class="fa fa-share"></a>
-                            <a href="#" class="fa fa-eye"></a>
+                            <a href="#" id="likes" class="fa fa-heart three-icons"></a>
+                            <a href="#" class="fa fa-share three-icons"></a>
+                            <a href="#" class="fa fa-eye three-icons"></a>
                         </div>
                         <div class="content">
-                            <img class="sneaker-img" src="images/forest-green.png" alt="">
-                            <h3>Nike Shoes</h3>
+                            <img class="sneaker-img" src="images/vapormax.png" alt="">
+                            <h3>Nike Vapormax Flynit Black</h3>
                             <div class="price">$200</div>
                             <div class="stars">
                                 <i class="fa fa-star"></i>
@@ -127,13 +157,13 @@
 
                     <div class="box">
                         <div class="icons">
-                            <a href="#" class="fa fa-heart"></a>
-                            <a href="#" class="fa fa-share"></a>
-                            <a href="#" class="fa fa-eye"></a>
+                            <a href="#" id="likes" class="fa fa-heart three-icons"></a>
+                            <a href="#" class="fa fa-share three-icons"></a>
+                            <a href="#" class="fa fa-eye three-icons"></a>
                         </div>
                         <div class="content">
-                            <img class="sneaker-img" src="images/red-air-one.png" alt="">
-                            <h3>Nike Shoes</h3>
+                            <img class="sneaker-img" src="images/oregonmaxes.png" alt="">
+                            <h3> Nike Air Max 1 Premium</h3>
                             <div class="price">$200 </div>
                             <div class="stars">
                                 <i class="fa fa-star"></i>
@@ -150,9 +180,9 @@
 
                     <div class="box">
                         <div class="icons">
-                            <a href="#" class="fa fa-heart"></a>
-                            <a href="#" class="fa fa-share"></a>
-                            <a href="#" class="fa fa-eye"></a>
+                            <a href="#" id="likes" class="fa fa-heart three-icons"></a>
+                            <a href="#" class="fa fa-share three-icons"></a>
+                            <a href="#" class="fa fa-eye three-icons"></a>
                         </div>
                         <div class="content">
                             <img class="sneaker-img" src="images/gratitude.png" alt="">
@@ -173,9 +203,9 @@
 
                     <div class="box">
                         <div class="icons">
-                            <a href="#" class="fa fa-heart"></a>
-                            <a href="#" class="fa fa-share"></a>
-                            <a href="#" class="fa fa-eye"></a>
+                            <a href="#" id="likes" class="fa fa-heart three-icons"></a>
+                            <a href="#" class="fa fa-share three-icons"></a>
+                            <a href="#" class="fa fa-eye three-icons"></a>
                         </div>
                         <div class="content">
                             <img class="sneaker-img" src="images/polamino.png" alt="">
@@ -196,9 +226,9 @@
 
                     <div class="box">
                         <div class="icons">
-                            <a href="#" class="fa fa-heart"></a>
-                            <a href="#" class="fa fa-share"></a>
-                            <a href="#" class="fa fa-eye"></a>
+                            <a href="#" id="likes" class="fa fa-heart three-icons"></a>
+                            <a href="#" class="fa fa-share three-icons"></a>
+                            <a href="#" class="fa fa-eye three-icons"></a>
                         </div>
                         <div class="content">
                             <img class="sneaker-img" src="images/pinegreen.png" alt="">
@@ -219,14 +249,14 @@
 
                     <div class="box">
                         <div class="icons">
-                            <a href="#" class="fa fa-heart"></a>
-                            <a href="#" class="fa fa-share"></a>
-                            <a href="#" class="fa fa-eye"></a>
+                            <a href="#" id="likes" class="fa fa-heart three-icons"></a>
+                            <a href="#" class="fa fa-share three-icons"></a>
+                            <a href="#" class="fa fa-eye three-icons"></a>
                         </div>
                         <div class="content">
-                            <img class="sneaker-img" src="images/olive.png" alt="">
-                            <h3>Nike Shoes</h3>
-                            <div class="price">$200 </div>
+                            <img class="sneaker-img" src="images/olivedunks.png" alt="">
+                            <h3>Nike Olive Dunks</h3>
+                            <div class="price">$120 </div>
                             <div class="stars">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -239,7 +269,59 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" id="likes" class="fa fa-heart three-icons"></a>
+                            <a href="#" class="fa fa-share three-icons"></a>
+                            <a href="#" class="fa fa-eye three-icons"></a>
+                        </div>
+                        <div class="content">
+                            <img class="sneaker-img" src="images/blackairmax.png" alt="">
+                            <h3> Nike Air Max 1 Black</h3>
+                            <div class="price"> $200 </div>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="add-cart">
+                                <button class="btn-cart"> Add to <i class="fa-solid fa-bag-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="box">
+                        <div class="icons">
+                            <a href="#" id="likes" class="fa fa-heart three-icons"></a>
+                            <a href="#" class="fa fa-share three-icons"></a>
+                            <a href="#" class="fa fa-eye three-icons"></a>
+                        </div>
+                        <div class="content">
+                            <img class="sneaker-img" src="images/pine-three.png" alt="">
+                            <h3> Air Jordan 3 Pine Green </h3>
+                            <div class="price"> $200 </div>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="add-cart">
+                                <button class="btn-cart"> Add to <i class="fa-solid fa-bag-shopping"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
+
 
 
         
@@ -247,11 +329,107 @@
 
     </section>
 
-    <section class="customer-service">
-        <h2> Customer Reviews </h2>
+    <section class="customer-review">
+        <h2 class="h2-customer"> Customer <span> Reviews</span> </h2>
+        <div class="customer-container">
+            <div class="c-box">
+                <img class ="review-pic" src="images/blackmanlocs.png" alt="">
+                <h3> Sneakerhead035</h3>
+                <p>
+                    <i class="fa-solid fa-quote-left quote"></i> Sneaker Room delivers a top-tier sneaker shopping experience with its extensive collection, 
+                    user-friendly website, and exclusive releases. Their customer service is exceptional, making it my go-to destination for the latest trends and limited editions. <i class="fa-solid fa-quote-right quote"></i>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa fa-star"></i>
+                </div>
+            </div>
+            <div class="c-box">
+                <img class ="review-pic" src="images/black-wmn.png" alt="">
+                <h3> FittedGirl02</h3>
+                <p>
+                    <i class="fa-solid fa-quote-left quote"></i> Sneaker Room's refund process was smooth and efficient, with helpful customer service. 
+                    The experience boosted my confidence for future purchases. <i class="fa-solid fa-quote-right quote"></i>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa fa-star-half-o other-stars"></i>
+                </div>
+            </div>
+            <div class="c-box">
+                <img class ="review-pic" src="images/biggie.png" alt="">
+                <h3> Notoriouskicks </h3>
+                <p>
+                    <i class="fa-solid fa-quote-left quote"></i> Sneaker Room goes beyond expectations. I encountered an issue with my order, and their customer service not only 
+                    resolved it swiftly but also went the extra mile to ensure my satisfaction. <i class="fa-solid fa-quote-right quote"></i>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa fa-star-half-o other-stars"></i>
+                    <i class="fa fa-star-o other-stars"></i>
+                   
+                </div>
+            </div>
+
+        </div>
     </section>
 
+    <section class="contact" id="contact">
+        <div class="main-contact">
+            <div class="contact-content">
+                <h4> About Us </h4>
+                <li><a href="#Home"> Company</a></li>
+                <li><a href="#About"> Return Policy</a></li>
+                <li><a href="Menu"> Careers</a></li>
+                <li><a href="Contact"> Stores </a></li>
+
+            </div>
+
+            <div class="contact-content">
+                <h4> Helpful Links</h4>
+                <li><a href="#Home"> Support</a></li>
+                <li><a href="#About"> Refund</a></li>
+                <li><a href="Menu"> FAQ</a></li>
+                <li><a href="Contact"> Feedback </a></li>
+
+            </div>
+
+            <div class="contact-content">
+                <h4> Contact</h4>
+                <li><a href="#Home"> Contact Us</a></li>
+                <li><a href="#About"> Press Center</a></li>
+                <li><a href="Menu">   Careers</a></li>
+                <li><a href="Contact"> FAQ </a></li>
+
+            </div>
+
+            <div class="contact-content">
+                <h4> Follow Us</h4>
+                <li><a href="#Home"> Tiktok</a></li>
+                <li><a href="#About"> Twitter</a></li>
+                <li><a href="Menu"> Facebook</a></li>
+                <li><a href="Contact"> Instagram </a></li>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p> Developed 2023 by Brianna Duncan</p>
+    </div>
+
+
     <script src="https://kit.fontawesome.com/fc84bd7ef1.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
 
     
 </body>
