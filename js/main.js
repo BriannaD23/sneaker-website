@@ -8,6 +8,17 @@ document.addEventListener('DOMContentLoaded', function () {
     let itemCount = 0; // Variable to track the number of items in the cart
     let totalPrice = 0; // Variable to track the total price
 
+    // Create a close button for the cart dropdown
+    const closeBtn = document.createElement('button');
+    closeBtn.classList.add('close-btn');
+    closeBtn.innerHTML = '<i class="fa-regular fa-circle-xmark"></i>';
+    closeBtn.addEventListener('click', function () {
+        cartDropdown.classList.remove('show');
+    });
+
+    // Append the close button to the cart dropdown
+    cartDropdown.appendChild(closeBtn);
+
     function handleAddToCartClick(event) {
         const parentBox = event.target.closest('.box');
         const productName = parentBox.querySelector('h3').textContent;
@@ -99,17 +110,20 @@ document.addEventListener('DOMContentLoaded', function () {
         // Check if there are any items in the cart
         const cartItems = cartDropdown.getElementsByClassName('cart-item');
         const hasItems = cartItems.length > 0;
-    
+
         // Update the total displayed in the cart
         cartTotal.textContent = `Total: $${totalPrice.toFixed(2)}`;
-    
+
         // Toggle the visibility of the total icon and dropdown menu
         if (hasItems) {
             cartTotal.classList.add('cartTotal');
-            cartDropdown.classList.add('show'); // Add this line to ensure the dropdown is shown when there are items
+            cartDropdown.classList.add('show');
+            cartItemCount.style.display = 'inline-block';
         } else {
             cartTotal.classList.remove('cartTotal');
-            cartDropdown.classList.remove('show');
+            // Do not remove 'show' class if there are no items
+            // cartDropdown.classList.remove('show');
+            cartItemCount.style.display = 'none';
         }
     }
 
@@ -117,9 +131,6 @@ document.addEventListener('DOMContentLoaded', function () {
         button.addEventListener('click', handleAddToCartClick);
     });
 });
-
-
-
 
 
 
@@ -178,6 +189,20 @@ document.addEventListener('DOMContentLoaded', function () {
         productPriceSpan.classList.add('product-price');
         productPriceSpan.textContent = `$${productPrice.toFixed(2)}`;
 
+
+        const closeBtn = document.createElement('button');
+        closeBtn.classList.add('close-btn');
+        
+        closeBtn.innerHTML = '<i class="fa-regular fa-circle-xmark"></i>';
+
+
+        closeBtn.addEventListener('click', function () {
+            cartDropdown.classList.remove('show');
+        });
+    
+        // Append the close button to the cart dropdown
+        cartDropdown.appendChild(closeBtn);
+
         // Create a trash can icon for removing the item
         const trashIcon = document.createElement('i');
         trashIcon.classList.add('fa', 'fa-trash', 'remove-icon');
@@ -224,21 +249,30 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function updateCartTotal() {
+        // Check if there are any items in the cart
+        const cartItems = cartDropdown.getElementsByClassName('cart-item');
+        const hasItems = cartItems.length > 0;
+    
         // Update the total displayed in the cart
         cartTotal.textContent = `Total: $${totalPrice.toFixed(2)}`;
-        cartTotal.classList.add('cartTotal');
-    }
+    
+        // Toggle the visibility of the total icon and dropdown menu
+        if (hasItems) {
+            cartTotal.classList.add('cartTotal');
+            cartDropdown.classList.add('show'); // Add this line to ensure the dropdown is shown when there are items
+            cartItemCount.style.display = 'inline-block';
+        } else {
+            cartTotal.classList.remove('cartTotal');
+            cartDropdown.classList.remove('show');
 
-    cartIcon.addEventListener('click', function () {
-        cartDropdown.classList.toggle('show');
-    });
+            cartItemCount.style.display = 'none';
+        }
+    }
 
     addToCartButtons.forEach(button => {
         button.addEventListener('click', handleAddToCartClick);
     });
-
-    // Create an element for the total and append it below the items in the dropdown
-    cartDropdown.appendChild(cartTotal);
+});
 });
 
 

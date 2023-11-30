@@ -116,6 +116,17 @@ header{
     display: none;
 }
 
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 .cart-item {
     display: flex;
     align-items: center;
@@ -144,7 +155,7 @@ header{
 
 
 .product-price {
-    font-size: 15px; /* Adjust the font size for the product price */
+    font-size: 16px; /* Adjust the font size for the product price */
     padding-right: 15px;
 }
 
@@ -153,8 +164,12 @@ header{
     cursor: pointer;
 }
 
+.cartTotal{
+    text-align: end;
+    padding-top: 10px;
+}
 
-.s-icons .cart-dropdown.show {
+#cartDropdown.show {
     display: block;
 }
 
