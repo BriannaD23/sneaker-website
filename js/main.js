@@ -96,26 +96,37 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function updateCartTotal() {
+        // Check if there are any items in the cart
+        const cartItems = cartDropdown.getElementsByClassName('cart-item');
+        const hasItems = cartItems.length > 0;
+    
         // Update the total displayed in the cart
         cartTotal.textContent = `Total: $${totalPrice.toFixed(2)}`;
+    
+        // Toggle the visibility of the total icon and dropdown menu
+        if (hasItems) {
+            cartTotal.classList.add('cartTotal');
+            cartDropdown.classList.add('show'); // Add this line to ensure the dropdown is shown when there are items
+        } else {
+            cartTotal.classList.remove('cartTotal');
+            cartDropdown.classList.remove('show');
+        }
     }
-
-    cartIcon.addEventListener('click', function () {
-        cartDropdown.classList.toggle('show');
-    });
 
     addToCartButtons.forEach(button => {
         button.addEventListener('click', handleAddToCartClick);
     });
-
-    // Create an element for the total and append it below the items in the dropdown
-    cartDropdown.appendChild(cartTotal);
 });
 
 
 
+
+
+
+
 //base code
-/*document.addEventListener('DOMContentLoaded', function () {
+/*
+document.addEventListener('DOMContentLoaded', function () {
     const addToCartButtons = document.querySelectorAll('.btn-cart');
     const cartDropdown = document.getElementById('cartDropdown');
     const cartIcon = document.getElementById('cartIcon');
@@ -215,6 +226,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateCartTotal() {
         // Update the total displayed in the cart
         cartTotal.textContent = `Total: $${totalPrice.toFixed(2)}`;
+        cartTotal.classList.add('cartTotal');
     }
 
     cartIcon.addEventListener('click', function () {
@@ -228,4 +240,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Create an element for the total and append it below the items in the dropdown
     cartDropdown.appendChild(cartTotal);
 });
+
+
 */
