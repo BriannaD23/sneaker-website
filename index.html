@@ -7,9 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Handjet:wght@300;400&family=Orbitron:wght@400;500&family=Press+Start+2P&family=Rajdhani:wght@400;600&family=Teko:wght@300;400&display=swap" rel="stylesheet">
-        
- 
-
     <title> Sneaker-Room </title>
    
 </head>
@@ -17,11 +14,10 @@
     <header>
        <a href="#" class="logo"><img class="logo-pic" src="images/sneakerlogo.png"></a> 
        <ul class="navbar"> 
-        <li><a href="#Home" class="nav-link"> Home</a></li>
-        <li><a href="#Sneakers" class="nav-link"> Sneakers</a></li>
-        <li><a href="#About"class="nav-link"> About </a></li>
-        <li><a href="#Reviews" class="nav-link"> Reviews</a></li>
-        
+            <li><a href="#Home" class="nav-link"> Home</a></li>
+            <li><a href="#Sneakers" class="nav-link"> Sneakers</a></li>
+            <li><a href="#Location"class="nav-link"> Location </a></li>
+            <li><a href="#Reviews" class="nav-link"> Reviews</a></li> 
        </ul> 
           
   
@@ -40,7 +36,7 @@
     </header>
   
 
-    <section class = "sneaker-show">
+    <section class = "sneaker-show" id="Home">
         <div class="container-two">
             <div class= "first-block">
                 <div class="right">  
@@ -80,8 +76,8 @@
         </div>
     </div>
 
-    <section class = "sneakers-options">
-        <h2> S<span>N</span>E</span><span>A</span>K<span>E</span>R<span>S</span></h2>
+    <section class = "sneakers-options" id="Sneakers">
+        <h2 class="title-sneakers" > S<span>N</span>E</span><span>A</span>K<span>E</span>R<span>S</span></h2>
              <div class="box-container">
                     <div class="box">
                         <div class="icons">
@@ -316,20 +312,57 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-                </div>
-
-
-
-        
-                
-
+                </div>           
     </section>
 
-    <section class="customer-review">
+
+    <section class="location" id="Location">
+        <h2 class="h2-Location"> L<span>o</span>c<span>a</span>t<span>i</span>o<span>n</span> </h2>
+        <div class="location-container">
+            <div class="map-container">
+
+                <div class="map-left">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11793.776757415144!2d-71.0694685394477!3d42.3543720462285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370832503ad5b%3A0x18d02d6e8684bd98!2sDowntown%2C%20Boston%2C%20MA!5e0!3m2!1sen!2sus!4v1701408914604!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="right-text">
+
+                    <p>Sneaker Room, nestled in the heart of downtown Boston, stands as a vibrant testament to the city's rich cultural tapestry. Our store, strategically located amidst the historic streets and modern skyline of Boston, captures the essence of urban living. As the bustling metropolis pulses around us, 
+                        Sneaker Room becomes more than a retail space; it transforms into a haven for sneaker enthusiasts and trendsetters alike. In this iconic setting, where the legacy of the past intertwines with the pulse of contemporary style, Sneaker Room curates a collection that reflects the dynamism of Boston itself. Our store isn't just a destination for premium footwear; it's a cultural hub, a place where the spirit of downtown Boston converges with the ever-evolving world of sneakers.
+                        Step into Sneaker Room, where each pair tells a story and every visit is an exploration of the intersection between fashion, heritage, and the vibrant energy of downtown Boston.
+                    </p>
+
+                    <div class="store-Hours">
+                        <h4> Store Hours</h4>
+                    </div>
+
+                    <div class="days-hours">
+                        <div class="days">
+                            <p>Monday</p>
+                            <p>Tuesday</p>
+                            <p>Wednesday</p>
+                            <p> Thursday</p>
+                            <p> Friday</p>
+                            <p> Saturday</p>
+                        </div>
+                        <div class="hours">
+                            <p>9:00 am - 5:00 pm</p>
+                            <p>9:00 am - 5:00 pm</p>
+                            <p>9:00 am - 5:00 pm</p>
+                            <p>9:00 am - 5:00 pm</p>
+                            <p>9:00 am - 5:00 pm</p>
+                            <p>9:00 am - 3:00 pm</p>
+                        </div>
+                    </div>
+
+                </div>
+           
+            </div>
+        </div>
+    </section>
+
+
+    <section class="customer-review" id="Reviews">
         <h2 class="h2-customer"> Customer <span> Reviews</span> </h2>
         <div class="customer-container">
             <div class="c-box">
