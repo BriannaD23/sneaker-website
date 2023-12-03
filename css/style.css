@@ -289,7 +289,7 @@ h1 span{
 }
 
 .feature:last-child {
-    border-right: none; /* Remove right border from the last feature */
+    border-right: none;
 }
   
 
@@ -319,7 +319,7 @@ h1 span{
 /*--------------------------------second-section------------------------------------------------*/
 
 #Sneakers {
-    padding-top: 82px; /* Adjust the value of padding as needed */
+    padding-top: 82px; 
 }
   
 
@@ -485,14 +485,14 @@ h2 span{
 
 .days-hours-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two even columns */
-    gap: 10px; /* Adjust the gap between the columns */
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
     padding: 3rem;
     margin-top: 2rem;
     text-align: center;
-    background-color: #fff; /* White background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    background-color: #fff;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .days {
@@ -502,7 +502,7 @@ h2 span{
 
 .hours {
     text-align: center;
-    color: #333; /* Add a color for better readability */
+    color: #333;
 }
 
 .days-hours {
@@ -560,8 +560,8 @@ h2 span{
 
 .c-box:hover,
 .c-box:active {
-    transform: scale(1.05); /* Increase the size by 5% on hover or touch */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow on hover or touch */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
 .c-box p{
