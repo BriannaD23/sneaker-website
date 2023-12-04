@@ -66,16 +66,16 @@ header{
     opacity: 0;
     background: white;
     position: absolute;
-    left: 50%; /* Center the underline relative to the text */
+    left: 50%; 
     bottom: -5px;
-    transform: translateX(-50%); /* Center the underline horizontally */
-    width: 0; /* Start with zero width */
+    transform: translateX(-50%);
+    width: 0; 
     height: 2px;
-    transition: width 0.5s, opacity 0.5s; /* Transition width and opacity */
+    transition: width 0.5s, opacity 0.5s; 
 }
 
 .nav-link:hover::after {
-    width: 75%; /* Make the underline the same width as the text */
+    width: 75%; 
     opacity: 0.7;
 }
 
@@ -682,11 +682,11 @@ h2 span{
 
 @media only screen and (max-width: 600px) {
     header {
-        height: 3rem; /* Adjust height for smaller screens */
+        height: 3rem;
     }
 
     .navbar {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px;
     }
 
     .logo-pic {
@@ -732,11 +732,11 @@ h2 span{
     }
 
     .map-container {
-        grid-template-columns: 1fr; /* Single column for small screens */
+        grid-template-columns: 1fr;
     }
 
     .days-hours-container {
-        grid-template-columns: 1fr; /* Single column for small screens */
+        grid-template-columns: 1fr; 
     }
 
     .box {
