@@ -102,7 +102,7 @@ header{
 
 .cart-icon .fa-shopping-cart {
     font-size: 27px;
-    color: #333; /* Default color */
+    color: #333; 
 }
 
 #cartItemCount {
@@ -113,8 +113,8 @@ header{
     position: absolute;
     top: -15px;
     right: 0;
-    background-color: #ff8c00; /* Red background color for the count */
-    color: #fff; /* Text color for the count */
+    background-color: #ff8c00; 
+    color: #fff; 
     border-radius: 50%;
     padding: 4px 8px;
     font-size: 12px;
@@ -224,7 +224,7 @@ header{
 .first-block{
     margin-top: 5rem;
     display: grid;
-    grid-template-columns:repeat(2,1fr); /* Two columns in the grid */
+    grid-template-columns:repeat(2,1fr); 
     gap: 5px;
 }
 
@@ -691,7 +691,7 @@ h2 span{
 
     .logo-pic {
         height: 2rem;
-        padding-left: 0.5rem; /* Adjust padding for smaller screens */
+        padding-left: 0.5rem; 
     }
 
     .nav-list-mobile {
