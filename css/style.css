@@ -568,6 +568,8 @@ h2 span{
 .c-box:active {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s, box-shadow 0.3s; /* Add a transition for a smoother effect */
+
 }
 
 .c-box p{
@@ -712,6 +714,10 @@ h2 span{
         display: none;
     }
 
+    #menu-icon{
+        font-size: 1.5rem;
+    }
+
     .logo-pic {
         height: 2rem;
         padding-left: 0.5rem; 
@@ -755,6 +761,12 @@ h2 span{
     .cart-dropdown {
         padding: 10px;
     }
+
+
+    .features{
+        height:55rem;
+    }
+
 /*----------------------------Sneaker-Show-------------------------------*/
 
     .first-block{
@@ -772,7 +784,7 @@ h2 span{
     }
 
     .cherrys{
-        height:25rem;
+        height:24rem;
         margin-top: 2rem;
     }
 
