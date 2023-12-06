@@ -773,13 +773,14 @@ h2 span{
     }
 
     .right{
-        margin-top: 5px;
+        margin-top: 1rem;
         padding: 0 2rem; 
         
     }
 
     .sneaker-show{
         height: 65rem;
+        margin-top: 2rem;
     }
 
     .cherrys{
