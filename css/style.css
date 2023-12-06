@@ -878,8 +878,18 @@ h2 span{
 
     .contact {
         padding: 20px 5% 20px;
-        height: 30rem;
+        height: 31rem;
     }
+
+    .last-text p{
+        text-align: center;
+        padding: 10px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        
+    
+    }
+    
 
     
 }
