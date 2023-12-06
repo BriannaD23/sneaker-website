@@ -146,6 +146,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+// Add JavaScript to toggle the visibility of the navigation on menu icon click
+document.getElementById('menu-icon').addEventListener('click', function () {
+     document.querySelector('.nav-link-hidden').classList.toggle('active');
+});
+
+
 navLinks.forEach(link => {
     link.addEventListener('click', event => {
       event.preventDefault();
@@ -163,3 +170,5 @@ navLinks.forEach(link => {
       });
     });
   });
+
+

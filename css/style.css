@@ -711,7 +711,25 @@ h2 span{
 
     .nav-link-hidden{
         display: none;
+        position: absolute;
+        top: 45px; /* Adjust top position based on your header height */
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        opacity: 0.9;
+        z-index: 1;
     }
+
+    .nav-link-hidden.active {
+        display: block;
+    }
+
+    .nav-link-hidden li {
+        padding: 15px;
+        text-align: center;
+    }
+    
+
 
     #menu-icon{
         font-size: 1.5rem;
@@ -773,7 +791,7 @@ h2 span{
     }
 
     .right{
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         padding: 0 2rem; 
         
     }
