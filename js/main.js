@@ -153,22 +153,6 @@ document.getElementById('menu-icon').addEventListener('click', function () {
 });
 
 
-navLinks.forEach(link => {
-    link.addEventListener('click', event => {
-      event.preventDefault();
-      console.log('Clicked on link:', link.getAttribute('href'));
-  
-      const targetSection = document.getElementById(link.getAttribute('href'));
-      console.log('Target Section:', targetSection);
-  
-      const navbarHeight = document.querySelector('.navbar').offsetHeight;
-      console.log('Navbar Height:', navbarHeight);
-  
-      window.scroll({
-        top: targetSection.offsetTop - navbarHeight,
-        behavior: 'smooth'
-      });
-    });
-  });
+
 
 
