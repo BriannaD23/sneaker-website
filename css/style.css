@@ -757,6 +757,17 @@ h2 span{
         padding: 1rem;
     }
 
+    .nav-link::after {
+        bottom: 0;
+    }
+    
+
+    .nav-link:hover::after {
+        width: 25%; 
+        opacity: 0.7;
+    }
+    
+
     .s-icons {
         padding: 10px;
         margin-right: 1rem;
