@@ -76,7 +76,6 @@ header{
     transform: translateX(-50%);
     width: 0; 
     height: 2px;
-    transition: width 0.5s, opacity 0.5s; 
 }
 
 .nav-link:hover::after {
@@ -764,7 +763,7 @@ h2 span{
 
 
     .features{
-        height:40rem;
+        height:36rem;
     }
 
 /*----------------------------Sneaker-Show-------------------------------*/
@@ -849,6 +848,10 @@ h2 span{
     .customer-review{
         height: 95rem;
     
+    }
+    .c-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
     
 
