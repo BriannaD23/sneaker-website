@@ -34,6 +34,11 @@ header{
 
 }
 
+#menu-icon {
+    display: none; /* Hide the menu icon by default on larger screens */
+}
+
+
 .navbar{
     list-style: none;
     display: flex;
@@ -95,7 +100,7 @@ header{
     margin:0  15px;
 }
 
-/* Add this CSS to your stylesheet */
+
 .cart-icon {
     position: relative;
 }
@@ -158,11 +163,11 @@ header{
 .cart-item {
     display: flex;
     align-items: center;
-    padding: 10px; /* Adjust the padding as needed */
+    padding: 10px; 
 }
 .cart-item-image {
-    width: 80px; /* Set a desired width for the image */
-    margin-right: 10px; /* Adjust the margin as needed */
+    width: 80px; 
+    margin-right: 10px; 
 }
 
 .product-details {
@@ -224,9 +229,10 @@ header{
 .first-block{
     margin-top: 5rem;
     display: grid;
-    grid-template-columns:repeat(2,1fr); 
+    grid-template-columns: 1fr 1fr;
     gap: 5px;
 }
+
 
 h1{
     font-size: 3.6rem;
@@ -680,13 +686,30 @@ h2 span{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
+    
+
+/*---------------------------------------- Header------------------------------------------------*/
+
+
     header {
         height: 3rem;
     }
 
+
+
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+        color: #E8E8E8;
+    }
+
     .navbar {
         padding: 10px;
+    }
+
+    .nav-link-hidden{
+        display: none;
     }
 
     .logo-pic {
@@ -714,6 +737,8 @@ h2 span{
     .s-icons {
         padding: 10px;
         margin-right: 1rem;
+        font-size: 15px;
+
     }
 
     .cart-icon .fa-shopping-cart {
@@ -723,12 +748,56 @@ h2 span{
     .cart-item-count {
         top: -10px;
         right: -5px;
-        font-size: 10px;
+        font-size: 7px;
         padding: 2px 5px;
     }
 
     .cart-dropdown {
         padding: 10px;
+    }
+/*----------------------------Sneaker-Show-------------------------------*/
+
+    .first-block{
+        grid-template-columns: 1fr;
+    }
+
+    .right{
+        margin-top: 1.5rem;
+        padding: 0 2rem; 
+        
+    }
+
+    .sneaker-show{
+        height: 65rem;
+    }
+
+    .cherrys{
+        height:25rem;
+        margin-top: 2rem;
+    }
+
+
+
+/*----------------------------Sneakerssss-------------------------------*/
+
+    .sneaker-img{
+        height: 5rem;
+        margin-bottom: 1rem;
+        margin-top: 2.3rem;
+    }
+
+    .sneakers-options{
+        height: 115rem;
+    }
+
+
+/*----------------------------Location-------------------------------*/
+
+
+    #Location {
+        padding-top: 90px;
+        background-color: #E8E8E8;
+        height: 80rem;
     }
 
     .map-container {
@@ -763,7 +832,20 @@ h2 span{
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
+/*----------------------------Location-------------------------------*/
+
+    .customer-review{
+        height: 95rem;
+    
+    }
+    
+
+/*----------------------------Contact-------------------------------*/
+
     .contact {
         padding: 20px 5% 20px;
+        height: 30rem;
     }
+
+    
 }
