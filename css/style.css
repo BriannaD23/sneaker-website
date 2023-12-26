@@ -849,14 +849,6 @@ h2 span{
         padding: 15px;
     }
 
-    .features {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .feature {
-        padding: 15px 0;
-    }
-
     .sneakers-options {
         padding: 0 10px;
     }
@@ -1023,12 +1015,15 @@ h2 span{
     .features{
         height: auto;
         overflow: hidden;
-        background-size: contain;
+        margin-bottom: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding-bottom: 33px;
     }
 
 
     .feature {
         padding: 15px 0;
+        box-sizing: border-box;
     }
 
 
@@ -1117,5 +1112,6 @@ h2 span{
 
     
 }
+
 
 
