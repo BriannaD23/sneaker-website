@@ -1018,12 +1018,14 @@ h2 span{
         margin-bottom: 3rem;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         padding-bottom: 33px;
+    
     }
 
 
     .feature {
-        padding: 15px 0;
+        padding: 20px 0;
         box-sizing: border-box;
+        margin-bottom: 1rem;
     }
 
 
