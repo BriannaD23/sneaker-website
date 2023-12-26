@@ -904,7 +904,7 @@ h2 span{
     @media only screen and (max-width: 767px) {
     
 
-        /*---------------------------------------- Header------------------------------------------------*/
+    /*---------------------------------------- Header------------------------------------------------*/
         
         
             header {
@@ -1124,14 +1124,18 @@ h2 span{
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
                 transition: transform 0.3s, box-shadow 0.3s; /* Add a transition for a smoother effect */
         
-        }
-        
-        
-
-            /*----------------------------Larger Screens-------------------------------*/
-
-        /*need to make smaller iphones responsive*/
-        
+        }    
 
 }
 
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .features {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        height: 58rem;
+  
+    }
+}
+
+
+/*----------------------------Larger Screens-------------------------------*/
