@@ -34,6 +34,10 @@ header{
 
 }
 
+body {
+    margin: 0;
+}
+
 #menu-icon {
     display: none; /* Hide the menu icon by default on larger screens */
 }
@@ -994,7 +998,7 @@ h2 span{
 
     .right{
         margin-top: 1.5rem;
-        padding: 0 2rem; 
+        padding: 0 1rem; 
         
     }
 
@@ -1018,6 +1022,7 @@ h2 span{
         margin-bottom: 3rem;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         padding-bottom: 33px;
+        margin-bottom: 1rem;
     
     }
 
@@ -1116,4 +1121,159 @@ h2 span{
 }
 
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
+/*----------------------------Sneaker-Show-------------------------------*/
+
+    
+    h1{
+        font-size: 3rem;
+    }
+    .first-block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right{
+        margin-top: 3rem;
+        order: 2;
+        
+    }
+
+    .right p{
+        padding-right: 1rem;
+    }
+
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 1;
+    }
+
+    .sneaker-show{
+        height: 65rem;
+        margin-top: 2rem;
+    }
+
+    .cherrys{
+        height:40rem;
+        margin-top: 2rem;
+    }
+
+
+/*----------------------------Features-------------------------------*/
+
+
+    .features{
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding-bottom: 33px;
+        margin-bottom: 1rem;
+    
+    }
+
+
+    .feature {
+        padding: 20px 0;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+    }
+
+
+
+
+
+/*----------------------------Sneakerssss-------------------------------*/
+
+    .sneaker-img{
+        height: 5rem;
+        margin-bottom: 1rem;
+        margin-top: 2.3rem;
+    }
+
+    .sneakers-options{
+        height: 72rem;
+    }
+
+
+/*----------------------------Location-------------------------------*/
+
+
+    #Location {
+        padding-top: 90px;
+        background-color: #E8E8E8;
+        height: 74rem;
+    }
+
+    .map-container {
+        grid-template-columns: 1fr;
+    }
+
+    .days-hours-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    .sneakers-options {
+        padding: 0 10px;
+    }
+
+    .title-sneakers {
+        margin-bottom: 3rem;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    }
+
+/*-----------------------------------------------------------*/
+
+    .customer-review{
+        height: 63rem;
+    
+    }
+    .c-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    
+
+/*----------------------------Contact-------------------------------*/
+
+    .contact {
+        padding: 20px 5% 20px;
+        height: 14rem;
+    }
+
+    .last-text p{
+        text-align: center;
+        padding: 10px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        
+    
+    }
+    .c-box:active {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+        transition: transform 0.3s, box-shadow 0.3s; /* Add a transition for a smoother effect */
+
+    }   
+    
+
+}
+
+
+
+@media only screen and (min-width: 768px){
+    .sneakers-options{
+        height: 80rem;
+    }
+
+}
