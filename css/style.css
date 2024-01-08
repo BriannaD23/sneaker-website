@@ -1136,7 +1136,6 @@ h2 span{
 
     .right{
         margin-top: 3rem;
-        order: 2;
         
     }
 
@@ -1148,7 +1147,6 @@ h2 span{
         display: flex;
         align-items: center;
         justify-content: center;
-        order: 1;
     }
 
     .sneaker-show{
